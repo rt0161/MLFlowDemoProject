@@ -1,0 +1,15 @@
+name: MLFlow_Proj2021
+
+conda_env: venv.yaml
+# Can have a docker_env instead of a conda_env, e.g.
+# docker_env:
+#    image:  mlflow-docker-example
+
+entry_points:
+  main:
+    parameters:
+      alpha: {type: string, default: "0.01" }
+      run_origin: {type: string, default: "None" }
+    command: "python main_helloworld.py
+            --alpha {alpha}
+            --run_origin {run_origin}"
