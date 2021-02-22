@@ -1,0 +1,15 @@
+artifact_uri: ../02-data/artifact_root/4076951a4b3a42a1a652a5f0e7dab347/artifacts
+end_time: 1613784973723
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 4076951a4b3a42a1a652a5f0e7dab347
+run_uuid: 4076951a4b3a42a1a652a5f0e7dab347
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1613784973611
+status: 3
+tags: []
+user_id: whoami

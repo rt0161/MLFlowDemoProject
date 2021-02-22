@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/0/272d5a6bb85d422a899d5304a20b870a/artifacts
+end_time: 1613881603715
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+name: ''
+run_id: 272d5a6bb85d422a899d5304a20b870a
+run_uuid: 272d5a6bb85d422a899d5304a20b870a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1613881603707
+status: 4
+tags: []
+user_id: whoami

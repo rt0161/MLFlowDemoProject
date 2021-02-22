@@ -1,0 +1,15 @@
+artifact_uri: ../04-model/artifact_root/b13cabeb48324bd790d520c22228b1c2/artifacts
+end_time: 1613938575001
+entry_point_name: ''
+experiment_id: '2'
+lifecycle_stage: deleted
+name: ''
+run_id: b13cabeb48324bd790d520c22228b1c2
+run_uuid: b13cabeb48324bd790d520c22228b1c2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1613938574890
+status: 3
+tags: []
+user_id: whoami

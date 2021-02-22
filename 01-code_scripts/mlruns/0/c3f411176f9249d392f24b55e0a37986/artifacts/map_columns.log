@@ -1,0 +1,10 @@
+2021-02-19 18:52:44 INFO     make column mapping is: {'subaru': 0, 'volvo': 1, 'nissan': 2, 'mercedes-benz': 3, 'porsche': 4, 'mazda': 5, 'saab': 6, 'toyota': 7, 'isuzu': 8, 'peugot': 9, 'dodge': 10, 'honda': 11, 'mercury': 12, 'alfa-romero': 13, 'audi': 14, 'volkswagen': 15, 'jaguar': 16, 'plymouth': 17, 'renault': 18, 'bmw': 19, 'chevrolet': 20, 'mitsubishi': 21}
+2021-02-19 18:52:44 INFO     engine-type column mapping is: {'ohc': 0, 'rotor': 1, 'l': 2, 'dohc': 3, 'ohcv': 4, 'ohcf': 5}
+2021-02-19 18:52:44 INFO     fuel-system column mapping is: {'spfi': 0, '4bbl': 1, '2bbl': 2, 'mfi': 3, 'spdi': 4, '1bbl': 5, 'idi': 6, 'mpfi': 7}
+2021-02-19 18:52:44 INFO     body-style column mapping is: {'hatchback': 0, 'wagon': 1, 'sedan': 2, 'hardtop': 3, 'convertible': 4}
+2021-02-19 18:52:44 INFO     aspiration column mapping is: {'std': 0, 'turbo': 1}
+2021-02-19 18:52:44 INFO     num-of-doors column mapping is: {'four': 4, 'two': 2}
+2021-02-19 18:52:44 INFO     drive-wheels column mapping is: {'fwd': 1, 'rwd': 0, '4wd': 4}
+2021-02-19 18:52:44 INFO     num-of-cylinders column mapping is: {'four': 4, 'six': 6, 'five': 5, 'eight': 8, 'two': 2, 'three': 3, 'twelve': 12}
+2021-02-19 18:52:44 INFO     num-of-cylinders column mapping is: {'four': 4, 'six': 6, 'five': 5, 'eight': 8, 'two': 2, 'three': 3, 'twelve': 12}
+2021-02-19 18:52:44 INFO     horsepower-binned column mapping is: {'Low': 0, 'Medium': 1, 'High': 2}

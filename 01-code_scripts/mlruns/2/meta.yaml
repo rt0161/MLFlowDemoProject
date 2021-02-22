@@ -1,0 +1,7 @@
+artifact_location: ../04-model/artifact_root/
+experiment_id: '2'
+lifecycle_stage: active
+name: model_build
+tags:
+  mlflow.note.content: This is where model comparison occurs. And the artifact folder
+    holds model as registers.
