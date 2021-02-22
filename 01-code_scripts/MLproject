@@ -6,10 +6,9 @@ conda_env: venv.yaml
 #    image:  mlflow-docker-example
 
 entry_points:
-  main:
-    parameters:
-      alpha: {type: string, default: "0.01" }
-      run_origin: {type: string, default: "None" }
-    command: "python main_helloworld.py
-            --alpha {alpha}
-            --run_origin {run_origin}"
+  data_prep:
+#    parameters:
+#      data_file : 'auto_clean.csv'
+#      rms: {type: float, default: 0.01 }
+#      run_origin: {type: string, default: "None" }
+    command: "python data_prep.py"
