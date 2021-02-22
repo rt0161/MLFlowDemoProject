@@ -15,12 +15,19 @@ run in command line: </n>
 $mlflow ui
 
 default ui will be at host 0.0.0.0, and port 5000 </n>
+
 So bring up a browser window and insert http://localhost:5000 </n>
+
 While no experiments are created yet. You will see only 'default' as one experiment </n>
+
 use UI click '+' to create new experiments : 'data_prep' and 'model_build' </n>
+
 Specify where the path to a folder where you want to log your artifacts. </n>
+
 Need to first create them, then run code with mlflow.start_run() or mlflow.log_xxxx in the code. </n>
+
 So , in this specific case, my artifact folder is under 02-data/artifact_root/ </n>
+
 and 04-model/artifact_root.
 
 
