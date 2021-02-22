@@ -3,11 +3,15 @@ Prerequisit: install mlflow in an environment, either conda or venv/virtualenv
 
 To start a MLflow project:
 prepare MLflow YAML file (as in 01-code_scripts/venv.YAML)</n>
+
 prepare MLflow project file : as in 01-code_scripts/MLProject</n>
+
 saved it in the file folder where codes run.
 
 To check the logged MLflow artifacts(files, logs, images, models...):</n>
+
 run in command line: </n>
+
 $mlflow ui
 
 default ui will be at host 0.0.0.0, and port 5000 </n>
