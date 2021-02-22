@@ -91,7 +91,35 @@ def get_model(arg_in):
 
 
 if __name__ == "__main__":
-
+    """Model training file useage:
+       command line: python train.py 'model name' args2 args3 args4 ........
+       args : the model parameters which user choose to input ,
+       -- model name : Logistic Regression, use 'logistic_regression' 
+                       Random Forest Regressor, use 'randomforest' 
+                       XGboost Regressor, use 'xgb'
+                       Adaboost Regressor, use 'adaboost'
+        different model arguments:
+        'logistic_regression': 
+         --penalty {arg2: 'l2' or 'none', default 'l2'}
+         --fit_intercept {arg3: True or False, default True}
+         --maximum_iteration {arg4: int, default 100}
+        'Random Forest Regressor':
+         --n_estimators {arg2: int, default 10}
+         --max_features {arg3: int or 'sqrt', default 'auto'}
+         --max_depth {arg4: int or None, default None}
+         --max_leaf_nodes {arg5: int or None, default None}
+        'XGboost Regressor':
+         --learning_rate {arg2: float, default .6}
+         --max_depth {arg4: int or None, default None}
+         --n_estimators {arg5: int, default 10}
+         --subsample {arg6: float, default .6}
+         --colsample_bytree {arg7: float, defaut .4}
+        'AdaBoostRegressor':
+         --n_estimators {arg2: int, default 10}
+         --learning_rate {arg3: float, default .6}
+         --loss {arg4: str, default 'linear'}
+        detail parameter options please see official sklearn regressor and xgboost documentation
+    """
     # load data
     df_carmod = pd.read_csv(data_path+dataname, index_col=None)
 
