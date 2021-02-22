@@ -4,6 +4,7 @@ import os, sys
 import random
 from pathlib import Path
 import logging
+import mlflow
 
 # set up base file path
 base_path=Path().resolve().parents[0]
@@ -107,16 +108,37 @@ def trans_dataframe_car(df, logger):
 
 
 if __name__ == '__main__':
+
+
+        # initiate mlflow PROJECT
+    #tracking_uri_path = "file:"+str(base_path)+"02-data/mlrun_store"
+    #mlflow.set_tracking_uri(tracking_uri_path)
+    mlflow.set_experiment("data_prep")
+    experiment = mlflow.get_experiment_by_name("data_prep")
+    print("Experiment_id: {}".format(experiment.experiment_id))
+    print("Artifact Location: {}".format(experiment.artifact_location))
+    print("Tags: {}".format(experiment.tags))
+    print("Lifecycle_stage: {}".format(experiment.lifecycle_stage))
+
+        #print("run_id: {}; status: {}".format(run.info.run_id, run.info.status))
+        #print("--")
+        # log initial stage data
+    mlflow.log_artifact(data_path+'auto_clean.csv')
     df_carmod = pd.read_csv(data_path+dataname)
     # prepare logger
-
-    if (logger.hasHandlers()):
-        logger.handlers.clear()
-    logger = setup_custom_logger('maplog')
+    try:
+        if (logger.hasHandlers()):logger.handlers.clear()
+    except:
+        logger = setup_custom_logger('maplog')
 
     df_carmod = trans_dataframe_car(df_carmod, logger)
 
     # save new dataframe to input to ML training 
     df_carmod.to_csv('../02-data/prep_car_input.csv', index=None)
 
+    # log stage of data after 
+    mlflow.log_artifact(data_path+'prep_car_input.csv')
+    mlflow.log_artifact('map_columns.log')
 
+    #mlflow.end_run()
+    #print("Active run : {}".format(mlflow.active_run()))
